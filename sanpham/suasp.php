@@ -71,7 +71,7 @@ if($_FILES['hinh']['name']==''){
 					while ($row_loai = mysqli_fetch_assoc($query_loai)){?>
 						<option value="<?php echo $row_loai['maloai'];?>">
 							<?php echo $row_loai['tenloai'];?></option>
-					} 
+					 
 			<?php	} ?>
 				</select>
 			</div>
@@ -82,8 +82,8 @@ if($_FILES['hinh']['name']==''){
 					while ($row_nhasanxuat = mysqli_fetch_assoc($query_nhasanxuat)){?>
 						<option value="<?php echo $row_nhasanxuat['manhasanxuat'];?>">
 							<?php echo $row_nhasanxuat['tennhasanxuat'];?></option>
-					} 
-			<?php	} ?>
+					
+			<?php }	 ?>
 				</select>
 			</div>
 <button  class="btn btn-success" name="submit" type="submit">Sửa</button>
